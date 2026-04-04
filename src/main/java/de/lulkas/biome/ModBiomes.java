@@ -48,7 +48,6 @@ public class ModBiomes {
                 context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
         globalOverworldGeneration(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_DEAD_BUSH);
         DefaultBiomeFeatures.addDesertDryVegetation(biomeBuilder);
 
         return new Biome.Builder()

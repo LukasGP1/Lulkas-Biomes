@@ -1,5 +1,7 @@
 package de.lulkas;
 
+import de.lulkas.block.ModBlocks;
+import de.lulkas.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,8 @@ public class LulkasBiomes implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlocks.register();
+		ModItemGroups.register();
 		LOGGER.info("Initialized " + MOD_ID);
 	}
 }

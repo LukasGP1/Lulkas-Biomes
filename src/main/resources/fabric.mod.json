@@ -23,6 +23,9 @@
 		],
 		"terrablender": [
 			"de.lulkas.biome.ModTerraBlenderAPI"
+		],
+		"client": [
+			"de.lulkas.LulkasBiomesClient"
 		]
 	},
 	"mixins": [

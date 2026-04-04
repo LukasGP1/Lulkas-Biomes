@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wither_rose",
+    "minecraft:dirt",
+    "minecraft:dirt",
+    "minecraft:dirt"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lulkas_biomes:withered_dirt"
+  }
+}

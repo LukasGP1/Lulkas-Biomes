@@ -1,22 +1,20 @@
 package de.lulkas.biome.surface;
 
 import de.lulkas.biome.ModBiomes;
+import de.lulkas.block.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.util.math.VerticalSurfaceType;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 
 public class ModMaterialRules {
-    private static final MaterialRules.MaterialRule GOLD_BLOCK = defaultStateRule(Blocks.GOLD_BLOCK);
-    private static final MaterialRules.MaterialRule EMERALD_BLOCK = defaultStateRule(Blocks.EMERALD_BLOCK);
-    private static final MaterialRules.MaterialRule DIAMOND_BLOCK = defaultStateRule(Blocks.DIAMOND_BLOCK);
+    private static final MaterialRules.MaterialRule WITHERED_DIRT = defaultStateRule(ModBlocks.WITHERED_DIRT);
 
     public static MaterialRules.MaterialRule makeRules() {
         MaterialRules.MaterialCondition isInWastedLands = MaterialRules.biome(ModBiomes.WASTED_LANDS);
 
         return MaterialRules.condition(
                 isInWastedLands,
-                createPlainsDirtAndGrassLike(DIAMOND_BLOCK, GOLD_BLOCK, EMERALD_BLOCK)
+                createPlainsDirtAndGrassLike(WITHERED_DIRT, WITHERED_DIRT, WITHERED_DIRT)
         );
     }
 
