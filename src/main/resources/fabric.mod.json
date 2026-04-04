@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"de.lulkas.LulkasBiomesDataGenerator"
+		],
+		"terrablender": [
+			"de.lulkas.biome.ModTerraBlenderAPI"
 		]
 	},
 	"mixins": [
