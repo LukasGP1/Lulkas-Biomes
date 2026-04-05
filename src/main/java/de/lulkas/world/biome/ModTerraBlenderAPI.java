@@ -1,7 +1,7 @@
-package de.lulkas.biome;
+package de.lulkas.world.biome;
 
 import de.lulkas.LulkasBiomes;
-import de.lulkas.biome.surface.ModMaterialRules;
+import de.lulkas.world.biome.surface.ModMaterialRules;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 import terrablender.api.TerraBlenderApi;

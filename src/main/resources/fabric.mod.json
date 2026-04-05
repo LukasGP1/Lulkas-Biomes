@@ -22,7 +22,7 @@
 			"de.lulkas.LulkasBiomesDataGenerator"
 		],
 		"terrablender": [
-			"de.lulkas.biome.ModTerraBlenderAPI"
+			"de.lulkas.world.biome.ModTerraBlenderAPI"
 		],
 		"client": [
 			"de.lulkas.LulkasBiomesClient"

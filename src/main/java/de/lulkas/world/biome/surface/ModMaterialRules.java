@@ -1,6 +1,6 @@
-package de.lulkas.biome.surface;
+package de.lulkas.world.biome.surface;
 
-import de.lulkas.biome.ModBiomes;
+import de.lulkas.world.biome.ModBiomes;
 import de.lulkas.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.math.VerticalSurfaceType;

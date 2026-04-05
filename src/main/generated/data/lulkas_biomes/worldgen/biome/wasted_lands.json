@@ -68,8 +68,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:patch_dry_grass_desert",
-      "minecraft:patch_dead_bush_2"
+      "lulkas_biomes:burnt_bush_placed"
     ]
   ],
   "has_precipitation": false,
@@ -84,22 +83,16 @@
       }
     ],
     "axolotls": [],
-    "creature": [
+    "creature": [],
+    "misc": [],
+    "monster": [
       {
-        "type": "minecraft:blaze",
-        "maxCount": 5,
-        "minCount": 3,
-        "weight": 2
-      },
-      {
-        "type": "minecraft:wolf",
-        "maxCount": 4,
-        "minCount": 4,
+        "type": "minecraft:husk",
+        "maxCount": 3,
+        "minCount": 1,
         "weight": 5
       }
     ],
-    "misc": [],
-    "monster": [],
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",

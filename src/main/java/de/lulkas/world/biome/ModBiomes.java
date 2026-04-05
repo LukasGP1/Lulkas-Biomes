@@ -1,6 +1,7 @@
-package de.lulkas.biome;
+package de.lulkas.world.biome;
 
 import de.lulkas.LulkasBiomes;
+import de.lulkas.world.feature.ModPlacedFeatures;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registerable;
@@ -16,7 +17,6 @@ import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
-import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 public class ModBiomes {
     public static final RegistryKey<Biome> WASTED_LANDS = createKey("wasted_lands");
@@ -39,8 +39,7 @@ public class ModBiomes {
 
     public static Biome wastedLands(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.CREATURE, 2, new SpawnSettings.SpawnEntry(EntityType.BLAZE, 3, 5));
-        spawnBuilder.spawn(SpawnGroup.CREATURE, 5, new SpawnSettings.SpawnEntry(EntityType.WOLF, 4, 4));
+        spawnBuilder.spawn(SpawnGroup.MONSTER, 5, new SpawnSettings.SpawnEntry(EntityType.HUSK, 1, 3));
         DefaultBiomeFeatures.addCaveMobs(spawnBuilder);
 
         GenerationSettings.LookupBackedBuilder biomeBuilder = new GenerationSettings.LookupBackedBuilder(
@@ -48,7 +47,7 @@ public class ModBiomes {
                 context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
         globalOverworldGeneration(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addDesertDryVegetation(biomeBuilder);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BURNT_BUSH_PLACED_KEY);
 
         return new Biome.Builder()
                 .precipitation(false)

@@ -3,8 +3,9 @@ package de.lulkas.datagen;
 import de.lulkas.block.ModBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.client.data.BlockStateModelGenerator;
-import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.block.Block;
+import net.minecraft.client.data.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -19,6 +20,12 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        registerGeneratedItemModelWithBlockTexture(ModBlocks.BURNT_BUSH, itemModelGenerator);
+    }
 
+    private static void registerGeneratedItemModelWithBlockTexture(Block block, ItemModelGenerator generator) {
+        TextureMap textureMap = TextureMap.layer0(block);
+        Identifier identifier = Models.GENERATED.upload(ModelIds.getItemModelId(block.asItem()), textureMap, generator.modelCollector);
+        generator.output.accept(block.asItem(), ItemModels.basic(identifier));
     }
 }
