@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:wither_rose",
     "minecraft:dirt",
     "minecraft:dirt",
-    "minecraft:dirt"
+    "minecraft:dirt",
+    "minecraft:wither_rose"
   ],
   "result": {
     "count": 1,

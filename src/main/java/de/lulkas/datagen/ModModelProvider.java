@@ -1,6 +1,7 @@
 package de.lulkas.datagen;
 
 import de.lulkas.block.ModBlocks;
+import de.lulkas.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Block;
@@ -21,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         registerGeneratedItemModelWithBlockTexture(ModBlocks.BURNT_BUSH, itemModelGenerator);
+        itemModelGenerator.register(ModItems.WITHERED_EYE, Models.GENERATED);
     }
 
     private static void registerGeneratedItemModelWithBlockTexture(Block block, ItemModelGenerator generator) {

@@ -2,6 +2,7 @@ package de.lulkas;
 
 import de.lulkas.block.ModBlocks;
 import de.lulkas.item.ModItemGroups;
+import de.lulkas.item.ModItems;
 import de.lulkas.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,7 @@ public class LulkasBiomes implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.register();
 		ModBlocks.register();
 		ModItemGroups.register();
 		ModWorldGeneration.generateModWorldGen();

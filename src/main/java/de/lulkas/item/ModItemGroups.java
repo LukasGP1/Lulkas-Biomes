@@ -21,6 +21,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.WITHERED_DIRT);
                         entries.add(ModBlocks.BURNT_BUSH);
+
+                        entries.add(ModItems.WITHERED_EYE);
                     })
                     .build()
     );
@@ -28,6 +30,7 @@ public class ModItemGroups {
     public static void register() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(ModBlocks.WITHERED_DIRT);
+            entries.add(ModItems.WITHERED_EYE);
             entries.add(ModBlocks.BURNT_BUSH);
         });
 

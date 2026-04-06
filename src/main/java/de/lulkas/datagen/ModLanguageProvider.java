@@ -18,6 +18,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
 
         translationBuilder.add("item.lulkas_biomes.withered_dirt", "Withered Dirt");
         translationBuilder.add("item.lulkas_biomes.burnt_bush", "Burnt Bush");
+        translationBuilder.add("item.lulkas_biomes.withered_eye", "Withered Eye");
 
         translationBuilder.add("itemgroup.lulkas_biomes", "Lulkas Biomes");
     }

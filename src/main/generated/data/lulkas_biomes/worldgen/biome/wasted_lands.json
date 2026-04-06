@@ -87,7 +87,7 @@
     "misc": [],
     "monster": [
       {
-        "type": "minecraft:husk",
+        "type": "minecraft:wither_skeleton",
         "maxCount": 3,
         "minCount": 1,
         "weight": 5
