@@ -39,7 +39,7 @@ public class ModBiomes {
 
     public static Biome wastedLands(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.MONSTER, 5, new SpawnSettings.SpawnEntry(EntityType.HUSK, 1, 3));
+        spawnBuilder.spawn(SpawnGroup.MONSTER, 5, new SpawnSettings.SpawnEntry(EntityType.WITHER_SKELETON, 1, 3));
         DefaultBiomeFeatures.addCaveMobs(spawnBuilder);
 
         GenerationSettings.LookupBackedBuilder biomeBuilder = new GenerationSettings.LookupBackedBuilder(
