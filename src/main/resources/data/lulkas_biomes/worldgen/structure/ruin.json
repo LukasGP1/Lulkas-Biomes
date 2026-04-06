@@ -9,9 +9,8 @@
   "biomes": "#lulkas_biomes:has_structure/ruin",
   "step": "surface_structures",
   "start_height": {
-    "absolute": 1
+    "absolute": 0
   },
-  "terrain_adaptation": "beard_box",
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "use_expansion_hack": false,
   "liquid_settings": "apply_waterlogging",

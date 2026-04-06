@@ -2,21 +2,19 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 1,
+      "weight": 2,
       "element": {
-        "location": "lulkas_biomes:ruin_1",
+        "location": "lulkas_biomes:ruin_path",
         "processors": "minecraft:empty",
-        "projection": "rigid",
+        "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 1,
+      "weight": 11,
       "element": {
-        "location": "lulkas_biomes:ruin_2",
-        "processors": "minecraft:empty",
         "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "minecraft:empty_pool_element"
       }
     }
   ]
