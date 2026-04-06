@@ -2,16 +2,16 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 2,
+      "weight": 3,
       "element": {
-        "location": "lulkas_biomes:ruin_path",
+        "location": "lulkas_biomes:dungeon/dungeon_hallway",
         "processors": "minecraft:empty",
-        "projection": "terrain_matching",
+        "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 11,
+      "weight": 1,
       "element": {
         "projection": "rigid",
         "element_type": "minecraft:empty_pool_element"

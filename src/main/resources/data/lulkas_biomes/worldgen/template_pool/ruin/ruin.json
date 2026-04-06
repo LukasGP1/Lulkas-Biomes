@@ -4,7 +4,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "lulkas_biomes:ruin_1",
+        "location": "lulkas_biomes:ruin/ruin_1",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -13,7 +13,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "lulkas_biomes:ruin_2",
+        "location": "lulkas_biomes:ruin/ruin_2",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

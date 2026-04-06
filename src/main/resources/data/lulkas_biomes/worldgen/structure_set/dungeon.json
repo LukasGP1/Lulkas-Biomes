@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "lulkas_biomes:dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1416565465,
+    "spacing": 50,
+    "separation": 20
+  }
+}
