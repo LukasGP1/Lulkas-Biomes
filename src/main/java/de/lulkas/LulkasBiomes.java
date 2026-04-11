@@ -4,6 +4,7 @@ import de.lulkas.block.ModBlocks;
 import de.lulkas.item.ModItemGroups;
 import de.lulkas.item.ModItems;
 import de.lulkas.world.gen.ModWorldGeneration;
+import de.lulkas.world.structure.ModStructureTypes;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ public class LulkasBiomes implements ModInitializer {
 		ModBlocks.register();
 		ModItemGroups.register();
 		ModWorldGeneration.generateModWorldGen();
+		ModStructureTypes.register();
 		LOGGER.info("Initialized " + MOD_ID);
 	}
 }
